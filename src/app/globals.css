@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Admin panelinde header ve footer'ı gizle */
+body:has([class*="admin"]) header[class*="fixed"],
+body:has([class*="admin"]) footer {
+  display: none !important;
+}
+
+/* Alternatif olarak, URL'ye göre gizleme (browser desteği daha geniş) */
+body.admin-page header[class*="fixed"],
+body.admin-page footer {
+  display: none !important;
+}
+
+/* Admin sayfalarında main elementindeki padding-top değerini kaldır */
+body.admin-page main {
+  padding-top: 0 !important;
+}
+
+/* Admin sayfasında içeriği ekranın tamamına yayacak şekilde ayarla */
+body.admin-page {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body.admin-page #__next,
+body.admin-page > div {
+  height: 100vh;
+}
