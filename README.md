@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lojistik Web Sitesi Projesi
 
-## Getting Started
+Bu proje, Lojistik firması için geliştirilmiş modern bir web sitesi ve yönetim panelidir. [Next.js](https://nextjs.org) framework'ü kullanılarak geliştirilmiştir.
 
-First, run the development server:
+## Özellikler
+
+- Responsive ve modern tasarım
+- SEO dostu yapı
+- Dinamik içerik yönetimi
+- Admin paneli ile kolay içerik güncelleme
+- Blog yönetimi
+- Filo yönetimi
+- Hizmet detayları
+- İletişim formu
+- Kariyer sayfası
+- Online hizmetler (Kargo takip, teklif alma)
+- Müşteri ilişkileri yönetimi
+
+## Teknolojiler
+
+- **Frontend**: Next.js 14, React, Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Veritabanı**: Supabase
+- **Kimlik Doğrulama**: NextAuth.js
+- **Deployment**: Vercel
+
+## Başlangıç
+
+Projeyi yerel ortamınızda çalıştırmak için:
 
 ```bash
+# Depoyu klonlayın
+git clone https://github.com/keenzz/logistic.git
+cd logistic
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açarak sonucu görebilirsiniz.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Proje Yapısı
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/` - Ana sayfa ve diğer sayfalar
+  - `(main)/` - Ana site sayfaları
+  - `admin/` - Yönetim paneli
+  - `api/` - API endpointleri
+  - `blog/` - Blog sayfaları
+  - `filo/` - Filo sayfaları
+  - `hizmetler/` - Hizmetler sayfaları
+  - `hakkimizda/` - Hakkımızda sayfası
+  - `iletisim/` - İletişim sayfası
+  - `kariyer/` - Kariyer sayfası
+  - `online-hizmetler/` - Online hizmetler sayfaları
+  - `referanslar/` - Referanslar sayfası
+- `src/components/` - Yeniden kullanılabilir bileşenler
+- `src/lib/` - Yardımcı fonksiyonlar ve kütüphaneler
+- `src/types/` - TypeScript tipleri
+- `public/` - Statik dosyalar
 
-## Learn More
+## Canlı Demo
 
-To learn more about Next.js, take a look at the following resources:
+[https://tlh-logistic.vercel.app](https://tlh-logistic.vercel.app) (örnek link)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Lisans
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
