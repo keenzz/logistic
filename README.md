@@ -63,7 +63,7 @@ Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açarak
 
 ## Canlı Demo
 
-[https://tlh-logistic.vercel.app](https://tlh-logistic.vercel.app) (örnek link)
+[https://tlhlogistic.vercel.app/](https://tlhlogistic.vercel.app/) (örnek link)
 
 ## Lisans
 
